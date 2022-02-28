@@ -1,7 +1,6 @@
 from utils.common import read_config
 from utils.data_mgmt import get_data
 from utils.model import create_model, save_model, save_plot
-import argparse
 import os
 
 
@@ -35,16 +34,6 @@ def training(config_path):
     save_plot(data=model.history.history, plots_dir= plots_dir_path )
 
 if __name__ == '__main__':
-
-    # for reading config - this is usefull when we want to change the config file
-    # from command line otherwise below is another example where we can directly give 
-    # config.yaml address
-
-    # args = argparse.ArgumentParser()
-    # args.add_argument("--config", "-c", default = "config.yaml") 
-    # parsed_args = args.parse_args()
-    # training(config_path= parsed_args.config)
-    
 
     # directly passing config.yaml path
     training(config_path= "config.yaml")
