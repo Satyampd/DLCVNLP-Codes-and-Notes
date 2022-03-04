@@ -13,9 +13,11 @@ params:
 artifacts:
   artifacts_dir: artifacts
   model_dir: models
+  ckpt_model_dir: models\ckpt_model
   plots_dir: plots
   checkpoint_dir: checkpoint
 
 logs:
-  logs_dir: logs_dir
+  logs_dir: logs
+  tensorboard_logs_dir: logs\tensorboard_logs
   general_dir: general_logs
