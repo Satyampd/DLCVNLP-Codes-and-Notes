@@ -42,7 +42,7 @@ def training(config_path):
 
     epochs = config["params"]["epochs"]
     batch_size = config["params"]["epochs"]
-    model.fit(X_train, y_train, epochs = 2, validation_data= (X_valid, y_valid), batch_size = batch_size, callbacks = callback_list)
+    model.fit(X_train, y_train, epochs = 5, validation_data= (X_valid, y_valid), batch_size = batch_size, callbacks = callback_list)
 
     artifacts_dir = config["artifacts"]["artifacts_dir"]
     model_dir = config["artifacts"]["model_dir"]
